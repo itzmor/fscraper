@@ -1,0 +1,4 @@
+#Tue May 22 18:03:12 IDT 2018
+base.0=/home/itzik/Downloads/RepeatingAlarm/Application/build/intermediates/transforms/dexMerger/release/0
+path.0=classes.dex
+renamed.0=classes.dex

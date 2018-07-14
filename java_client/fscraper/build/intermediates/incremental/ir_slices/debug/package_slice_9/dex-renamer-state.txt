@@ -1,0 +1,4 @@
+#Sun Jul 15 00:23:39 IDT 2018
+base.0=/home/itzik/projects/facebook_scraper/java_client/fscraper/build/intermediates/transforms/dexMerger/debug/9
+path.0=classes.dex
+renamed.0=classes.dex

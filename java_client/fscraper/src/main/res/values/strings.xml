@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+ Copyright 2013 The Android Open Source Project
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+<resources>
+    <string name="sample_action">Set Alarm</string>
+    <string name="facebook_app_id">415374225575006</string>
+    <string name="fb_login_protocol_scheme">fb415374225575006</string>
+    <string name="subscribe_button_text">Subscribe!!</string>
+    <string name="unsubscribe_button_text">Unsubscribe</string>
+    <string name="update_button_text">Update!!</string>
+    <string name="get_unfriends_button_text">Get Unfriends!!</string>
+    <string name="set_daily_check_button_text">Set Daily Check!!</string>
+    <string name="check_time_text_text">Check Time</string>
+    <string name="should_schedule_text">Schedule?</string>
+    <string name="schedule_time_text_text">Schedule Time</string>
+</resources>

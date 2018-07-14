@@ -1,0 +1,215 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml:16:1-83:12
+INJECTED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml:16:1-83:12
+INJECTED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml:16:1-83:12
+MERGED from [com.facebook.android:facebook-login:4.34.0] /home/itzik/.gradle/caches/transforms-1/files-1.1/facebook-login-4.34.0.aar/08492f08419f544d612436bc4380ddec/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-common:4.34.0] /home/itzik/.gradle/caches/transforms-1/files-1.1/facebook-common-4.34.0.aar/be82cda4e690aa909966d00cd138dd17/AndroidManifest.xml:21:1-37:12
+MERGED from [com.android.support:support-v4:27.0.2] /home/itzik/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/856f13136a9d12ab9baf2b427adf18cf/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:gridlayout-v7:25.3.1] /home/itzik/.gradle/caches/transforms-1/files-1.1/gridlayout-v7-25.3.1.aar/31c491a83e3cab1fa6cb97613c968ca0/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:cardview-v7:27.0.2] /home/itzik/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.0.2.aar/e9922235623bb43b78178635eaf08625/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.0.2] /home/itzik/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/008eed38092adfb54dda147a08c7e0b2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.android:facebook-core:4.34.0] /home/itzik/.gradle/caches/transforms-1/files-1.1/facebook-core-4.34.0.aar/514ab83fe2b2992cd6e8dd4f6ff1abf0/AndroidManifest.xml:21:1-53:12
+MERGED from [com.android.support:support-fragment:27.0.2] /home/itzik/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/2b7b9e8fb8c7bf81c352e3b1f05627ca/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.0.2] /home/itzik/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/d4e56dff373bf7889bfc41dfff1e17df/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customtabs:27.0.2] /home/itzik/.gradle/caches/transforms-1/files-1.1/customtabs-27.0.2.aar/da5f98823e154f31b1ec26e623b92ce4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] /home/itzik/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/1b3c2e52e7ed3a3caeb16cfd5780f564/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.0.2] /home/itzik/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/1d4293ec5cf95f35db97ff974e09578a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.0.2] /home/itzik/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/a6bf53d1303c6333a38de63a8a120297/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.0.2] /home/itzik/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/56c5bdb2227feec85a3482606118493d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.0.2] /home/itzik/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/94d4691df27a62c3a61dcab3d72850aa/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.0.3] /home/itzik/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/e51fb6c7707c52012dc19c441cc8a1aa/AndroidManifest.xml:17:1-24:12
+INJECTED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml:16:1-83:12
+INJECTED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml:16:1-83:12
+	package
+		ADDED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml:17:5-42
+	android:versionName
+		ADDED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml:19:5-30
+		INJECTED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml
+		INJECTED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml:16:11-69
+	android:versionCode
+		ADDED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml:18:5-28
+		INJECTED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml
+		INJECTED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml
+application
+ADDED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml:22:5-80:19
+MERGED from [com.facebook.android:facebook-login:4.34.0] /home/itzik/.gradle/caches/transforms-1/files-1.1/facebook-login-4.34.0.aar/08492f08419f544d612436bc4380ddec/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-login:4.34.0] /home/itzik/.gradle/caches/transforms-1/files-1.1/facebook-login-4.34.0.aar/08492f08419f544d612436bc4380ddec/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-common:4.34.0] /home/itzik/.gradle/caches/transforms-1/files-1.1/facebook-common-4.34.0.aar/be82cda4e690aa909966d00cd138dd17/AndroidManifest.xml:28:5-35:19
+MERGED from [com.facebook.android:facebook-common:4.34.0] /home/itzik/.gradle/caches/transforms-1/files-1.1/facebook-common-4.34.0.aar/be82cda4e690aa909966d00cd138dd17/AndroidManifest.xml:28:5-35:19
+MERGED from [com.android.support:gridlayout-v7:25.3.1] /home/itzik/.gradle/caches/transforms-1/files-1.1/gridlayout-v7-25.3.1.aar/31c491a83e3cab1fa6cb97613c968ca0/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:gridlayout-v7:25.3.1] /home/itzik/.gradle/caches/transforms-1/files-1.1/gridlayout-v7-25.3.1.aar/31c491a83e3cab1fa6cb97613c968ca0/AndroidManifest.xml:26:5-20
+MERGED from [com.facebook.android:facebook-core:4.34.0] /home/itzik/.gradle/caches/transforms-1/files-1.1/facebook-core-4.34.0.aar/514ab83fe2b2992cd6e8dd4f6ff1abf0/AndroidManifest.xml:28:5-51:19
+MERGED from [com.facebook.android:facebook-core:4.34.0] /home/itzik/.gradle/caches/transforms-1/files-1.1/facebook-core-4.34.0.aar/514ab83fe2b2992cd6e8dd4f6ff1abf0/AndroidManifest.xml:28:5-51:19
+	android:supportsRtl
+		ADDED from [com.facebook.android:facebook-login:4.34.0] /home/itzik/.gradle/caches/transforms-1/files-1.1/facebook-login-4.34.0.aar/08492f08419f544d612436bc4380ddec/AndroidManifest.xml:28:18-44
+	android:label
+		ADDED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml:25:9-41
+	android:icon
+		ADDED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml:24:9-45
+	android:allowBackup
+		ADDED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml:23:9-35
+	android:theme
+		ADDED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml:26:9-40
+meta-data#com.facebook.sdk.ApplicationId
+ADDED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml:28:9-29:54
+	android:value
+		ADDED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml:29:13-52
+	android:name
+		ADDED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml:28:20-65
+activity#com.facebook.FacebookActivity
+ADDED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml:31:9-34:48
+MERGED from [com.facebook.android:facebook-common:4.34.0] /home/itzik/.gradle/caches/transforms-1/files-1.1/facebook-common-4.34.0.aar/be82cda4e690aa909966d00cd138dd17/AndroidManifest.xml:29:9-32:66
+MERGED from [com.facebook.android:facebook-common:4.34.0] /home/itzik/.gradle/caches/transforms-1/files-1.1/facebook-common-4.34.0.aar/be82cda4e690aa909966d00cd138dd17/AndroidManifest.xml:29:9-32:66
+	android:label
+		ADDED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml:34:13-45
+	android:configChanges
+		ADDED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml:32:13-113
+	android:theme
+		ADDED from [com.facebook.android:facebook-common:4.34.0] /home/itzik/.gradle/caches/transforms-1/files-1.1/facebook-common-4.34.0.aar/be82cda4e690aa909966d00cd138dd17/AndroidManifest.xml:32:13-63
+	android:name
+		ADDED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml:31:19-63
+activity#com.facebook.CustomTabActivity
+ADDED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml:35:9-44:20
+MERGED from [com.facebook.android:facebook-common:4.34.0] /home/itzik/.gradle/caches/transforms-1/files-1.1/facebook-common-4.34.0.aar/be82cda4e690aa909966d00cd138dd17/AndroidManifest.xml:34:9-67
+MERGED from [com.facebook.android:facebook-common:4.34.0] /home/itzik/.gradle/caches/transforms-1/files-1.1/facebook-common-4.34.0.aar/be82cda4e690aa909966d00cd138dd17/AndroidManifest.xml:34:9-67
+	android:exported
+		ADDED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml:37:13-36
+	android:name
+		ADDED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml:36:13-58
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:@string/fb_login_protocol_scheme
+ADDED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml:38:13-43:29
+action#android.intent.action.VIEW
+ADDED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml:39:17-69
+	android:name
+		ADDED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml:39:25-66
+category#android.intent.category.DEFAULT
+ADDED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml:40:17-76
+	android:name
+		ADDED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml:40:27-73
+category#android.intent.category.BROWSABLE
+ADDED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml:41:17-78
+	android:name
+		ADDED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml:41:27-75
+data
+ADDED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml:42:17-75
+	android:scheme
+		ADDED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml:42:23-72
+activity#il.co.itzikm.repeatingalarm.MainActivity
+ADDED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml:45:9-54:20
+	android:label
+		ADDED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml:47:13-45
+	android:uiOptions
+		ADDED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml:48:13-57
+	android:name
+		ADDED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml:46:13-68
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml:49:13-53:29
+action#android.intent.action.MAIN
+ADDED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml:50:17-69
+	android:name
+		ADDED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml:50:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml:52:17-77
+	android:name
+		ADDED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml:52:27-74
+service#il.co.itzikm.repeatingalarm.NightlyCalcService
+ADDED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml:61:9-72:19
+	android:enabled
+		ADDED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml:63:13-35
+	android:exported
+		ADDED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml:64:13-36
+	android:name
+		ADDED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml:62:13-47
+receiver#il.co.itzikm.repeatingalarm.MyReceiver
+ADDED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml:73:9-78:20
+	android:name
+		ADDED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml:73:19-72
+intent-filter#action:name:il.co.itzikm.MY_TIMER
+ADDED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml:74:13-77:29
+action#il.co.itzikm.MY_TIMER
+ADDED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml:75:17-76:59
+	android:name
+		ADDED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml:76:21-57
+uses-permission#android.permission.INTERNET
+ADDED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml:81:5-66
+	android:name
+		ADDED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml:81:22-64
+uses-sdk
+INJECTED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml
+INJECTED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml
+MERGED from [com.facebook.android:facebook-login:4.34.0] /home/itzik/.gradle/caches/transforms-1/files-1.1/facebook-login-4.34.0.aar/08492f08419f544d612436bc4380ddec/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-login:4.34.0] /home/itzik/.gradle/caches/transforms-1/files-1.1/facebook-login-4.34.0.aar/08492f08419f544d612436bc4380ddec/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-common:4.34.0] /home/itzik/.gradle/caches/transforms-1/files-1.1/facebook-common-4.34.0.aar/be82cda4e690aa909966d00cd138dd17/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-common:4.34.0] /home/itzik/.gradle/caches/transforms-1/files-1.1/facebook-common-4.34.0.aar/be82cda4e690aa909966d00cd138dd17/AndroidManifest.xml:24:5-26:41
+MERGED from [com.android.support:support-v4:27.0.2] /home/itzik/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/856f13136a9d12ab9baf2b427adf18cf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.0.2] /home/itzik/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/856f13136a9d12ab9baf2b427adf18cf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:gridlayout-v7:25.3.1] /home/itzik/.gradle/caches/transforms-1/files-1.1/gridlayout-v7-25.3.1.aar/31c491a83e3cab1fa6cb97613c968ca0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:gridlayout-v7:25.3.1] /home/itzik/.gradle/caches/transforms-1/files-1.1/gridlayout-v7-25.3.1.aar/31c491a83e3cab1fa6cb97613c968ca0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:cardview-v7:27.0.2] /home/itzik/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.0.2.aar/e9922235623bb43b78178635eaf08625/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.0.2] /home/itzik/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.0.2.aar/e9922235623bb43b78178635eaf08625/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.0.2] /home/itzik/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/008eed38092adfb54dda147a08c7e0b2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.0.2] /home/itzik/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/008eed38092adfb54dda147a08c7e0b2/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.android:facebook-core:4.34.0] /home/itzik/.gradle/caches/transforms-1/files-1.1/facebook-core-4.34.0.aar/514ab83fe2b2992cd6e8dd4f6ff1abf0/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-core:4.34.0] /home/itzik/.gradle/caches/transforms-1/files-1.1/facebook-core-4.34.0.aar/514ab83fe2b2992cd6e8dd4f6ff1abf0/AndroidManifest.xml:24:5-26:41
+MERGED from [com.android.support:support-fragment:27.0.2] /home/itzik/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/2b7b9e8fb8c7bf81c352e3b1f05627ca/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.0.2] /home/itzik/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/2b7b9e8fb8c7bf81c352e3b1f05627ca/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.0.2] /home/itzik/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/d4e56dff373bf7889bfc41dfff1e17df/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.0.2] /home/itzik/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/d4e56dff373bf7889bfc41dfff1e17df/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customtabs:27.0.2] /home/itzik/.gradle/caches/transforms-1/files-1.1/customtabs-27.0.2.aar/da5f98823e154f31b1ec26e623b92ce4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customtabs:27.0.2] /home/itzik/.gradle/caches/transforms-1/files-1.1/customtabs-27.0.2.aar/da5f98823e154f31b1ec26e623b92ce4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] /home/itzik/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/1b3c2e52e7ed3a3caeb16cfd5780f564/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] /home/itzik/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/1b3c2e52e7ed3a3caeb16cfd5780f564/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.0.2] /home/itzik/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/1d4293ec5cf95f35db97ff974e09578a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.0.2] /home/itzik/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/1d4293ec5cf95f35db97ff974e09578a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.0.2] /home/itzik/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/a6bf53d1303c6333a38de63a8a120297/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.0.2] /home/itzik/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/a6bf53d1303c6333a38de63a8a120297/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.2] /home/itzik/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/56c5bdb2227feec85a3482606118493d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.2] /home/itzik/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/56c5bdb2227feec85a3482606118493d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.2] /home/itzik/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/94d4691df27a62c3a61dcab3d72850aa/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.2] /home/itzik/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/94d4691df27a62c3a61dcab3d72850aa/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.0.3] /home/itzik/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/e51fb6c7707c52012dc19c441cc8a1aa/AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.3] /home/itzik/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/e51fb6c7707c52012dc19c441cc8a1aa/AndroidManifest.xml:20:5-22:41
+INJECTED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml
+INJECTED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml
+		ADDED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml
+		INJECTED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml
+		ADDED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml
+		INJECTED from /home/itzik/projects/facebook_scraper/java_client/fscraper/src/main/AndroidManifest.xml
+activity#com.facebook.CustomTabMainActivity
+ADDED from [com.facebook.android:facebook-common:4.34.0] /home/itzik/.gradle/caches/transforms-1/files-1.1/facebook-common-4.34.0.aar/be82cda4e690aa909966d00cd138dd17/AndroidManifest.xml:33:9-71
+	android:name
+		ADDED from [com.facebook.android:facebook-common:4.34.0] /home/itzik/.gradle/caches/transforms-1/files-1.1/facebook-common-4.34.0.aar/be82cda4e690aa909966d00cd138dd17/AndroidManifest.xml:33:19-68
+meta-data#android.support.VERSION
+ADDED from [com.android.support:gridlayout-v7:25.3.1] /home/itzik/.gradle/caches/transforms-1/files-1.1/gridlayout-v7-25.3.1.aar/31c491a83e3cab1fa6cb97613c968ca0/AndroidManifest.xml:22:5-24:34
+	android:value
+		ADDED from [com.android.support:gridlayout-v7:25.3.1] /home/itzik/.gradle/caches/transforms-1/files-1.1/gridlayout-v7-25.3.1.aar/31c491a83e3cab1fa6cb97613c968ca0/AndroidManifest.xml:24:9-31
+	android:name
+		ADDED from [com.android.support:gridlayout-v7:25.3.1] /home/itzik/.gradle/caches/transforms-1/files-1.1/gridlayout-v7-25.3.1.aar/31c491a83e3cab1fa6cb97613c968ca0/AndroidManifest.xml:23:9-47
+provider#com.facebook.internal.FacebookInitProvider
+ADDED from [com.facebook.android:facebook-core:4.34.0] /home/itzik/.gradle/caches/transforms-1/files-1.1/facebook-core-4.34.0.aar/514ab83fe2b2992cd6e8dd4f6ff1abf0/AndroidManifest.xml:39:9-42:40
+	android:authorities
+		ADDED from [com.facebook.android:facebook-core:4.34.0] /home/itzik/.gradle/caches/transforms-1/files-1.1/facebook-core-4.34.0.aar/514ab83fe2b2992cd6e8dd4f6ff1abf0/AndroidManifest.xml:41:13-72
+	android:exported
+		ADDED from [com.facebook.android:facebook-core:4.34.0] /home/itzik/.gradle/caches/transforms-1/files-1.1/facebook-core-4.34.0.aar/514ab83fe2b2992cd6e8dd4f6ff1abf0/AndroidManifest.xml:42:13-37
+	android:name
+		ADDED from [com.facebook.android:facebook-core:4.34.0] /home/itzik/.gradle/caches/transforms-1/files-1.1/facebook-core-4.34.0.aar/514ab83fe2b2992cd6e8dd4f6ff1abf0/AndroidManifest.xml:40:13-70
+receiver#com.facebook.CurrentAccessTokenExpirationBroadcastReceiver
+ADDED from [com.facebook.android:facebook-core:4.34.0] /home/itzik/.gradle/caches/transforms-1/files-1.1/facebook-core-4.34.0.aar/514ab83fe2b2992cd6e8dd4f6ff1abf0/AndroidManifest.xml:44:9-50:20
+	android:exported
+		ADDED from [com.facebook.android:facebook-core:4.34.0] /home/itzik/.gradle/caches/transforms-1/files-1.1/facebook-core-4.34.0.aar/514ab83fe2b2992cd6e8dd4f6ff1abf0/AndroidManifest.xml:46:13-37
+	android:name
+		ADDED from [com.facebook.android:facebook-core:4.34.0] /home/itzik/.gradle/caches/transforms-1/files-1.1/facebook-core-4.34.0.aar/514ab83fe2b2992cd6e8dd4f6ff1abf0/AndroidManifest.xml:45:13-86
+intent-filter#action:name:com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED
+ADDED from [com.facebook.android:facebook-core:4.34.0] /home/itzik/.gradle/caches/transforms-1/files-1.1/facebook-core-4.34.0.aar/514ab83fe2b2992cd6e8dd4f6ff1abf0/AndroidManifest.xml:47:13-49:29
+action#com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED
+ADDED from [com.facebook.android:facebook-core:4.34.0] /home/itzik/.gradle/caches/transforms-1/files-1.1/facebook-core-4.34.0.aar/514ab83fe2b2992cd6e8dd4f6ff1abf0/AndroidManifest.xml:48:17-95
+	android:name
+		ADDED from [com.facebook.android:facebook-core:4.34.0] /home/itzik/.gradle/caches/transforms-1/files-1.1/facebook-core-4.34.0.aar/514ab83fe2b2992cd6e8dd4f6ff1abf0/AndroidManifest.xml:48:25-92
