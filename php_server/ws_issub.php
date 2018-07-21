@@ -13,6 +13,6 @@ if ($db->userExists($userid)) {
 	$retval=true;
 }
 header('Content-type: application/json');
-$arr = array('retval' => $retval, 'name' => $db->getName(), 'email' => $db->getEmail(), 'is_schedule' => $db->isSchedule(), 'schedule_time' => $db->getScheduleTime());
+$arr = array('retval' => $retval, 'name' => $db->getName(), 'email' => $db->getEmail(), 'is_schedule' => $db->isSchedule(), 'schedule_time' => $db->getScheduleTime(), 'fb_account' => $db->getFbAccount());
 echo json_encode($arr);
 $db->close();

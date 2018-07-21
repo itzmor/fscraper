@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . '/database.php';
+require_once __DIR__ . '/fbscraper.php';
 
 $retval=true;
 
@@ -7,13 +8,16 @@ $db = new database();
 
 $_POST = json_decode(file_get_contents('php://input'), true);
 $userid = $_POST['userid'];
-$friendsOfUser = $_POST['friends'];
+$db->getUserById($userid);
+$fbaccount = $db->getFbAccount();
+//$friendsOfUser = $_POST['friends'];
+$fbs = new fbscraper();
+$friendsOfUser = $fbs->getFriends($fbaccount);
 $aggragatedForUser = array();
 foreach ($friendsOfUser as $key) {
 	$aggragatedForUser[$key]++;
 }
 
-$db->getUserById($userid);
 $unfriends_list = array();
 if ($db->userExists($userid)) {
 	$friends_of_user_in_db = $db->getFriendsOfUser();

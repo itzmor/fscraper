@@ -11,11 +11,12 @@ $email = $_POST['email'];
 $userid = $_POST['userid'];
 $is_schedule = $_POST['is_schedule'];
 $schedule_time = $_POST['schedule_time'];
+$fb_account = $_POST['fb_account'];
 
 $db->getUserById($userid);
 if ($db->userExists($userid)) {
 	$db->deleteUser();
-	if ($db->insertUser ($userid, $name, $email, $is_schedule, $schedule_time)) {
+	if ($db->insertUser ($userid, $name, $email, $is_schedule, $schedule_time, $fb_account)) {
 		$retval = true;
 	} else {
 		$retval = false;

@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . '/database.php';
+require_once __DIR__ . '/fbscraper.php';
 
 $retval=true;
 
@@ -9,7 +10,11 @@ $_POST = json_decode(file_get_contents('php://input'), true);
 $name = $_POST['name'];
 $email = $_POST['email'];
 $userid = $_POST['userid'];
-$allFriends = $_POST['friends'];
+$fbaccount = $_POST['fbaccount'];
+
+$fbs = new fbscraper();
+//$allFriends = $fbs->getFriends($fbaccount);
+#$allFriends = $_POST['friends'];
 $totalForUser = array();
 foreach ($allFriends as $key) {
 	$totalForUser[$key]++;
@@ -22,7 +27,7 @@ $db->getUserById($userid);
 if ($db->userExists($userid)) {
 	$retval = true;
 } else {
-	if ($db->insertUser ($userid, $name, $email, false, "0400")) {
+	if ($db->insertUser ($userid, $name, $email, false, "0400", "")) {
 		$db->deleteAllFriendsOfUser();
 		$db->addFriendsToUser($totalForUser);
 		$retval = true;
