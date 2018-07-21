@@ -26,4 +26,5 @@
     <string name="check_time_text_text">Check Time</string>
     <string name="should_schedule_text">Schedule?</string>
     <string name="schedule_time_text_text">Schedule Time</string>
+    <string name="fb_account_text_text">Facebook account</string>
 </resources>

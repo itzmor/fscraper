@@ -1,10 +1,10 @@
 #Internal package file, do not edit.
-#Sun Jul 15 00:23:39 IDT 2018
-1.base=/home/itzik/projects/facebook_scraper/java_client/fscraper/build/intermediates/transforms/dexMerger/debug/11
+#Sat Jul 21 20:34:07 IDT 2018
+1.base=/home/itzik/projects/facebook_scraper/java_client/fscraper/build/intermediates/transforms/dexMerger/debug/30
 2.path=classes.dex
 0.baseType=DIRECTORY
 3.baseType=DIRECTORY
-2.base=/home/itzik/projects/facebook_scraper/java_client/fscraper/build/intermediates/transforms/dexMerger/debug/14
+2.base=/home/itzik/projects/facebook_scraper/java_client/fscraper/build/intermediates/transforms/dexMerger/debug/29
 3.set=DEX
 2.set=DEX
 1.baseType=DIRECTORY
@@ -12,8 +12,8 @@
 count=4
 1.set=DEX
 0.path=classes.dex
-3.base=/home/itzik/projects/facebook_scraper/java_client/fscraper/build/intermediates/transforms/dexMerger/debug/13
+3.base=/home/itzik/projects/facebook_scraper/java_client/fscraper/build/intermediates/transforms/dexMerger/debug/28
 0.set=DEX
-0.base=/home/itzik/projects/facebook_scraper/java_client/fscraper/build/intermediates/transforms/dexMerger/debug/12
+0.base=/home/itzik/projects/facebook_scraper/java_client/fscraper/build/intermediates/transforms/dexMerger/debug/31
 2.baseType=DIRECTORY
 1.path=classes.dex

@@ -36,15 +36,15 @@ public final class R {
         public static final int clip_horizontal = 0x7f07002e;
         public static final int clip_vertical = 0x7f07002f;
         public static final int end = 0x7f070045;
-        public static final int fill = 0x7f070049;
-        public static final int fill_horizontal = 0x7f07004a;
-        public static final int fill_vertical = 0x7f07004b;
-        public static final int horizontal = 0x7f070050;
-        public static final int left = 0x7f07005a;
-        public static final int right = 0x7f070073;
-        public static final int start = 0x7f070095;
-        public static final int top = 0x7f0700a5;
-        public static final int vertical = 0x7f0700ac;
+        public static final int fill = 0x7f07004a;
+        public static final int fill_horizontal = 0x7f07004b;
+        public static final int fill_vertical = 0x7f07004c;
+        public static final int horizontal = 0x7f070051;
+        public static final int left = 0x7f07005b;
+        public static final int right = 0x7f070074;
+        public static final int start = 0x7f070096;
+        public static final int top = 0x7f0700a6;
+        public static final int vertical = 0x7f0700ad;
     }
     public static final class styleable {
         public static final int[] GridLayout = { 0x7f020026, 0x7f02005b, 0x7f02005c, 0x7f0200be, 0x7f0200d3, 0x7f0200d4, 0x7f020118 };

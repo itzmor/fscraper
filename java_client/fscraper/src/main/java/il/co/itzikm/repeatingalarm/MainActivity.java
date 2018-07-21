@@ -125,11 +125,13 @@ public class MainActivity extends SampleActivityBase {
                     Button myGetUnfriendsButton = (Button) findViewById(R.id.get_unfriends_button);
                     Switch myScheduleSwitch = (Switch)findViewById(R.id.should_schedule_switch);
                     TextView myScheduletimeTextView = (TextView)findViewById(R.id.schedule_time_textview);
+                    EditText myFbAccountTextView = (EditText)findViewById(R.id.fb_account_textview);
                     mySwitch.setEnabled(false);
                     myUpdateButton.setEnabled(false);
                     myGetUnfriendsButton.setEnabled(false);
                     myScheduleSwitch.setEnabled(false);
                     myScheduletimeTextView.setEnabled(false);
+                    myFbAccountTextView.setEnabled(false);
                 }
             }
         };
@@ -143,6 +145,7 @@ public class MainActivity extends SampleActivityBase {
         String uf = "";
         Boolean is_schedule=false;
         String schedule_time = "";
+        String fb_account = "";
         try{
             uf = retobj.get("retval").toString();
             String is_schedule_str = retobj.get("is_schedule").toString();
@@ -152,6 +155,7 @@ public class MainActivity extends SampleActivityBase {
                 is_schedule = false;
             }
             schedule_time = retobj.getString("schedule_time");
+            fb_account = retobj.getString("fb_account");
         }
         catch (JSONException je)
         {
@@ -162,6 +166,7 @@ public class MainActivity extends SampleActivityBase {
         Button myGetUnfriendsButton = (Button) findViewById(R.id.get_unfriends_button);
         Switch myScheduleSwitch = (Switch)findViewById(R.id.should_schedule_switch);
         TextView myScheduletimeTextView = (TextView)findViewById(R.id.schedule_time_textview);
+        EditText myFbAccountTextView = (EditText)findViewById(R.id.fb_account_textview);
 
         mySwitch.setEnabled(true);
         if (uf == "true")
@@ -169,7 +174,9 @@ public class MainActivity extends SampleActivityBase {
             mySwitch.setChecked(true);
             myUpdateButton.setEnabled(true);
             myGetUnfriendsButton.setEnabled(true);
+            myFbAccountTextView.setEnabled(true);
             myScheduleSwitch.setEnabled(true);
+            myFbAccountTextView.setEnabled(true);
             if (is_schedule) {
                 myScheduleSwitch.setChecked(true);
                 myScheduletimeTextView.setEnabled(true);
@@ -181,6 +188,7 @@ public class MainActivity extends SampleActivityBase {
                 stop_schedule();
             }
             myScheduletimeTextView.setText(schedule_time);
+            myFbAccountTextView.setText(fb_account);
         } else
         {
             mySwitch.setChecked(false);
@@ -188,6 +196,7 @@ public class MainActivity extends SampleActivityBase {
             myGetUnfriendsButton.setEnabled(false);
             myScheduleSwitch.setEnabled(false);
             myScheduletimeTextView.setEnabled(false);
+            myFbAccountTextView.setEnabled(false);
         }
         Log.i(TAG, "App started " + WumActions.getDate());
         facebook = new Facebook(accessToken);
@@ -261,13 +270,15 @@ public class MainActivity extends SampleActivityBase {
         Button myGetUnfriendsButton = (Button) findViewById(R.id.get_unfriends_button);
         Switch myScheduleSwitch = (Switch)findViewById(R.id.should_schedule_switch);
         TextView myScheduletimeTextView = (TextView) findViewById(R.id.schedule_time_textview);
+        EditText myFbAccountTextView = (EditText) findViewById(R.id.fb_account_textview);
         if (mySwitch.isChecked())
         {
-            wumConnectWithWs.run_wus_action(WumActionType.SUBSCRIBE, true, "0300", accessToken);
+            wumConnectWithWs.run_wus_action(WumActionType.SUBSCRIBE, true, "0300", "", accessToken);
             myUpdateButton.setEnabled(true);
             myGetUnfriendsButton.setEnabled(true);
             myScheduleSwitch.setEnabled(true);
             myScheduletimeTextView.setEnabled(true);
+            myFbAccountTextView.setEnabled(true);
         } else
         {
             stop_schedule();
@@ -276,17 +287,76 @@ public class MainActivity extends SampleActivityBase {
             myGetUnfriendsButton.setEnabled(false);
             myScheduleSwitch.setEnabled(false);
             myScheduletimeTextView.setEnabled(false);
+            myFbAccountTextView.setEnabled(false);
         }
     }
 
 
     public void update_function(View view) {
+        final EditText myFbAccountText = (EditText)findViewById(R.id.fb_account_textview);
+        final Switch myScheduleSwitch = (Switch)findViewById(R.id.should_schedule_switch);
+        final TextView myScheduletimeText = (TextView)findViewById(R.id.schedule_time_textview);
         WumConnectWithWs wumConnectWithWs = new WumConnectWithWs();
+        wumConnectWithWs.run_wus_action(WumActionType.UPDATE_USER,
+                myScheduleSwitch.isChecked(), myScheduletimeText.getText().toString(),
+                myFbAccountText.getText().toString(), accessToken);
+        JSONObject retobj2 = wumConnectWithWs.get_retobj();
+        System.out.print(retobj2.toString());
+
+
+        wumConnectWithWs = new WumConnectWithWs();
         wumConnectWithWs.run_wus_action(WumActionType.UPDATE, accessToken);
+        retobj2 = wumConnectWithWs.get_retobj();
+        System.out.print(retobj2.toString());
+        Log.i(TAG, "Update completed");
     }
 
+    public void set_fb_account_function(View view) {
+        final EditText myFbAccountText = (EditText)findViewById(R.id.fb_account_textview);
+        final Switch myScheduleSwitch = (Switch)findViewById(R.id.should_schedule_switch);
+        final TextView myScheduletimeText = (TextView)findViewById(R.id.schedule_time_textview);
+        LayoutInflater li = LayoutInflater.from(context);
+        View promptsView = li.inflate(R.layout.prompts, null);
+
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
+                context);
+
+        // set prompts.xml to alertdialog builder
+        alertDialogBuilder.setView(promptsView);
+
+        final EditText userInput = (EditText) promptsView
+                .findViewById(R.id.editTextDialogUserInput);
+        // set dialog message
+        alertDialogBuilder
+                .setCancelable(false)
+                .setPositiveButton("OK",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog,int id) {
+                                // get user input and set it to result
+                                // edit text
+                                myFbAccountText.setText(userInput.getText());
+                                WumConnectWithWs wumConnectWithWs = new WumConnectWithWs();
+                                wumConnectWithWs.run_wus_action(WumActionType.UPDATE_USER,
+                                        myScheduleSwitch.isChecked(), myScheduletimeText.getText().toString(),
+                                        myFbAccountText.getText().toString(), accessToken);
+                            }
+                        })
+                .setNegativeButton("Cancel",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                dialog.cancel();
+                            }
+                        });
+
+        // create alert dialog
+        AlertDialog alertDialog = alertDialogBuilder.create();
+
+        // show it
+        alertDialog.show();
+    }
     public void set_schedule_function(View view)
     {
+        final EditText myFbAccountText = (EditText)findViewById(R.id.fb_account_textview);
         final Switch myScheduleSwitch = (Switch)findViewById(R.id.should_schedule_switch);
         final TextView myScheduletimeText = (TextView)findViewById(R.id.schedule_time_textview);
         if (myScheduleSwitch.isChecked())
@@ -317,7 +387,8 @@ public class MainActivity extends SampleActivityBase {
                                     myScheduletimeText.setText(userInput.getText());
                                     WumConnectWithWs wumConnectWithWs = new WumConnectWithWs();
                                     wumConnectWithWs.run_wus_action(WumActionType.UPDATE_USER,
-                                            myScheduleSwitch.isChecked(), myScheduletimeText.getText().toString(), accessToken);
+                                            myScheduleSwitch.isChecked(), myScheduletimeText.getText().toString(),
+                                            myFbAccountText.getText().toString(), accessToken);
                                     runSchedule(userInput.getText().toString());
                                 }
                             })
@@ -340,11 +411,18 @@ public class MainActivity extends SampleActivityBase {
             myScheduletimeText.setEnabled(false);
             WumConnectWithWs wumConnectWithWs = new WumConnectWithWs();
             wumConnectWithWs.run_wus_action(WumActionType.UPDATE_USER,
-                    myScheduleSwitch.isChecked(), myScheduletimeText.getText().toString(), accessToken);
+                    myScheduleSwitch.isChecked(), myScheduletimeText.getText().toString(), myFbAccountText.getText().toString(), accessToken);
             stop_schedule();
         }
     }
     public void get_unfriends_list_function(View view) {
+        final EditText myFbAccountText = (EditText)findViewById(R.id.fb_account_textview);
+        final Switch myScheduleSwitch = (Switch)findViewById(R.id.should_schedule_switch);
+        final TextView myScheduletimeText = (TextView)findViewById(R.id.schedule_time_textview);
+        WumConnectWithWs wumConnectWithWs = new WumConnectWithWs();
+        wumConnectWithWs.run_wus_action(WumActionType.UPDATE_USER,
+                myScheduleSwitch.isChecked(), myScheduletimeText.getText().toString(),
+                myFbAccountText.getText().toString(), accessToken);
         String notification = WumActions.get_unfriends(accessToken);
 
         if (!notification.isEmpty()) {

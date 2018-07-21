@@ -1,0 +1,23 @@
+<?php
+
+class facebookr
+{
+	protected $fb;
+	protected $accessToken;
+
+	public function __construct()
+	{
+	}
+
+	function getFriends() 
+	{
+		#$command = escapeshellcmd('./scrape_friends.py');
+		#$output = shell_exec($command);
+		#echo $output;
+		ob_start();
+		passthru('/usr/bin/python3 ./scrape_friends.py');
+		$output = ob_get_clean(); 
+		echo $output;
+
+	}
+}

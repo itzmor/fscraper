@@ -79,6 +79,14 @@
         android:inputType="numberDecimal"
         android:text="@string/schedule_time_text_text" />
 
+    <EditText
+        android:id="@+id/fb_account_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="50"
+        android:inputType="text"
+        android:text="@string/fb_account_text_text" />
+
     <fragment
         android:id="@+id/log_fragment"
         android:name="il.co.itzikm.common.logger.LogFragment"
@@ -93,5 +101,6 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:padding="16dp"
+        android:onClick="set_fb_account_function"
         android:text="@string/intro_message" />
 </LinearLayout>

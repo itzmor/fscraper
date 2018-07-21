@@ -13,6 +13,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.nio.charset.StandardCharsets;
 import java.util.Map;
 import java.util.concurrent.ExecutionException;
 
@@ -21,19 +22,20 @@ public    class WumConnectWithWs {
     JSONObject retobj = null;
     Boolean is_schedule;
     String schedule_time;
+    String fb_account;
     public static final String TAG = "WumConnectWithWs";
     Thread thrd1;
 
-    public void run_wus_action(final WumActionType action, Boolean is_schedule, String schedule_time, AccessToken accessToken)
+    public void run_wus_action(final WumActionType action, Boolean is_schedule, String schedule_time, String fb_account, AccessToken accessToken)
     {
         this.is_schedule = is_schedule;
         this.schedule_time = schedule_time;
+        this.fb_account = fb_account;
         run_wus_action(action, accessToken);
     }
 
     public void run_wus_action(final WumActionType action, final AccessToken accessToken) {
         final JSONObject obj = new JSONObject();
-        final JSONArray friends = new JSONArray();
         Facebook facebook = null;
 
         if (AccessToken.getCurrentAccessToken() != null) {
@@ -49,24 +51,6 @@ public    class WumConnectWithWs {
                 facebook = new Facebook(accessToken);
             }
 
-            if (action == WumActionType.SUBSCRIBE || action == WumActionType.GET_UNFRIENDS_LIST ||
-                    action == WumActionType.UPDATE) {
-
-                Map<String, String> friendsMap;
-                try {
-                    friendsMap = facebook.getFacebookFriends();
-                    for (String fri : friendsMap.values()) {
-                        friends.put(fri);
-                    }
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-                try {
-                    obj.put("friends", friends);
-                } catch (JSONException je) {
-                    Log.e(TAG, je.toString());
-                }
-            }
             if (action == WumActionType.SUBSCRIBE || action == WumActionType.UPDATE || action == WumActionType.UPDATE_USER) {
                 Map<String, String> detailsMap = null;
                 JSONArray f_from_res = null;
@@ -86,6 +70,7 @@ public    class WumConnectWithWs {
                     obj.put("email", details[1]);
                     obj.put("is_schedule", this.is_schedule);
                     obj.put("schedule_time", this.schedule_time);
+                    obj.put("fb_account", this.fb_account);
                 } catch (JSONException je) {
                     Log.e(TAG, je.toString());
                 }
@@ -126,7 +111,8 @@ public    class WumConnectWithWs {
                         //                os.flush();
                         //              os.close();
                         String line;
-                        BufferedReader reader = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+                        BufferedReader reader = new BufferedReader(new InputStreamReader(conn.getInputStream(), StandardCharsets.UTF_8));
+//                        BufferedReader reader = new BufferedReader(new InputStreamReader(conn.getInputStream()));
 
                         String returned_json_string = "";
                         while ((line = reader.readLine()) != null) {
@@ -135,7 +121,12 @@ public    class WumConnectWithWs {
                         }
                         wr.close();
                         reader.close();
-                        retobj = new JSONObject(returned_json_string);
+                        try {
+                            retobj = new JSONObject(returned_json_string);
+                        }
+                        catch (JSONException e) {
+                            retobj = new JSONObject(returned_json_string.substring(3));
+                        }
                     }
                     catch (Exception ex)
                     {
@@ -159,6 +150,7 @@ public    class WumConnectWithWs {
             } catch (InterruptedException e1) {
             }
         }
+
         return retobj;
     }
 }

@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from selenium import webdriver
 options = webdriver.ChromeOptions()
 prefs = {"profile.default_content_setting_values.notifications" : 2}
